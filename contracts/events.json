@@ -1,0 +1,23 @@
+{
+  "IntervalReadingFinalised": {
+    "owner": "metering",
+    "version": 1,
+    "fields": {"meter_id": "str", "interval": "int", "import_wh": "int", "export_wh": "int", "readings": "int"}
+  },
+  "TradeMatched": {
+    "owner": "marketplace",
+    "version": 1,
+    "fields": {"trade_id": "str", "interval": "int", "buyer": "str", "buyer_meter": "str",
+               "seller": "str", "seller_meter": "str", "wh": "int", "price": "int"}
+  },
+  "TradeReservationFailed": {
+    "owner": "settlement",
+    "version": 1,
+    "fields": {"trade_id": "str", "reason": "str"}
+  },
+  "SettlementCompleted": {
+    "owner": "settlement",
+    "version": 1,
+    "fields": {"trade_id": "str", "delivered_wh": "int", "seller_paid_millicents": "int", "provisional": "bool"}
+  }
+}
