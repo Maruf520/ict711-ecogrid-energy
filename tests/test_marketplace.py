@@ -45,6 +45,7 @@ def test_trade_is_published_and_voided_when_buyer_cannot_pay():
     assert market.status[trade_id] == "void"
 
 
+
 def test_anti_corruption_layer_keeps_only_what_the_marketplace_needs():
     bus = EventBus()
     market = MarketplaceService(bus, {"M-S1": "S1"})
@@ -59,3 +60,4 @@ def test_anti_corruption_layer_keeps_only_what_the_marketplace_needs():
     bus.publish(Event("IntervalReadingFinalised", data))
     bus.publish(Event("IntervalReadingFinalised", dict(data, meter_id="UNKNOWN")))
     assert market.delivered == {("S1", T0): 250}
+ 
