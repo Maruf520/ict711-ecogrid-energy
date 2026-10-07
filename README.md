@@ -57,3 +57,8 @@ context deals with it. The last line should always say the ledger total is 0.
 All of these run in `.github/workflows/ci.yml` on every push and pull request.
 
 
+## How we work
+
+Everyone works on their own branch and opens a pull request, then asks one of the
+others to review it. `main` is protected, so a PR needs one approval and a green CI run
+before it can be merged.
