@@ -9,7 +9,6 @@ from ecogrid.events import Event, EventBus
 
 PRICE_CAP = 100  # cents per kWh
 
-
 @dataclass
 class Order:
     participant: str
