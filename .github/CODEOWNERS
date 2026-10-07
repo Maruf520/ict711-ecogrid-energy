@@ -1,0 +1,6 @@
+# Whoever owns a context has to review any change to it.
+*                              @rihammisuk
+/src/ecogrid/metering.py       @Maruf520
+/src/ecogrid/marketplace.py    @rihammisuk
+/src/ecogrid/settlement.py     @Maruf520
+/contracts/                    @Maruf520 @rihammisuk @Salemah
